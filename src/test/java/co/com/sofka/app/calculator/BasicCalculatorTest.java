@@ -28,6 +28,20 @@ class BasicCalculatorTest {
 
     }
 
+    @DisplayName("Testin several sums")
+    @ParameterizedTest(name = "{0} + {1} = {2}")
+    @CsvSource({
+            "0,1,1",
+            "1,2,3",
+            "49, 51,100",
+            "1, 100, 101"
+    })
+   public void voidSumaVariosCasos(Long first, Long second,Long expextedResult){
+        assertEquals(expextedResult,basicCalculator.suma(first,second),
+                ()->first + " + " + second + " should equal " + expextedResult);
+
+    }
+
 
 
 }
