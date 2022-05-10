@@ -33,6 +33,19 @@ public class App {
 
         System.out.println(number1 + " + " + number2 + " = " + result);
 
+        Long resultResta=calculator.resta(number1,number2);
+
+        System.out.println(number1 + " - " + number2 + " = " + resultResta);
+
+        Long resultMul=calculator.resta(number1,number2);
+
+        System.out.println(number1 + " * " + number2 + " = " + resultMul);
+
+        Long resultDiv=calculator.resta(number1,number2);
+
+        System.out.println(number1 + " / " + number2 + " = " + resultDiv);
+
+
     }
 
 }
